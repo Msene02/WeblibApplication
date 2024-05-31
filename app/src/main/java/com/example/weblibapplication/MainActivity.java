@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         rb5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                displayDuration = 500;
+                displayDuration = 5000;
             }
         });
 
@@ -139,28 +139,6 @@ public class MainActivity extends AppCompatActivity {
         handler.removeCallbacks(defileRunnable);
         displayCurrentElement(null);
     }
-
-    /*
-    @SuppressLint("Range")
-    private void displayCurrentElement(Chord option) {
-        if (option == null) {
-            textView.setText("");
-        } else {
-            SpannableStringBuilder builder = new SpannableStringBuilder(option.getValue() + " ");
-
-            // Appliquer une taille spécifique au texte "value"
-            builder.setSpan(new RelativeSizeSpan(1.5f), 0, option.getValue().length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-
-            // Ajout du symbole "m" en bas à droite de la valeur
-            int lastIndexOfValue = builder.length() - 1; // Index de la dernière lettre de la valeur
-            builder.append("m"); // Ajout du symbole "m"
-
-            // Appliquer une taille spécifique au symbole "m"
-            builder.setSpan(new RelativeSizeSpan(-1.5f), lastIndexOfValue + 1, builder.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE); // +1 pour inclure le symbole "m"
-
-            textView.setText(builder);
-        }
-    }*/
 
     @SuppressLint("Range")
     private String buildChordString(Chord chord) {

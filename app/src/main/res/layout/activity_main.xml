@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/Start"
+        android:layout_marginStart="180dp"
+        android:text="@string/reset" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/topSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delay"
+        android:layout_marginTop="500dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/five_sec"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/five_sec" />
+
+        <RadioButton
+            android:id="@+id/ten_sec"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ten_sec" />
+
+        <RadioButton
+            android:id="@+id/fifteen_sec"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fifteen_sec" />
+
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/Minors"
+        android:text="@string/minor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="590dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/Sharp_flat"
+        android:text="@string/sharp_flat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+
+
+</RelativeLayout>
